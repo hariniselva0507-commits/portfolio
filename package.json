@@ -1,0 +1,17 @@
+{
+  "name": "fullstack-developer-portfolio",
+  "version": "1.0.0",
+  "description": "Full-stack dynamic developer portfolio with React, TypeScript, Express, and MongoDB",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix server run build && npm --prefix client run build",
+    "seed": "npm --prefix server run seed",
+    "lint": "npm --prefix client run lint && npm --prefix server run lint"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
